@@ -1,0 +1,449 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyecto STEM - Paleoclimatología</title>
+
+  <!-- Fuente Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      color: #4b2e2b;
+      background: url('https://i.pinimg.com/236x/dc/af/1a/dcaf1a908bc2befbbdb8b3516280e6b7.jpg') no-repeat center center fixed;
+      background-size: cover;
+      background-color: #fff7f3;
+    }
+
+    header {
+      background: linear-gradient(135deg, rgba(255,185,151,0.95), rgba(247,160,114,0.95));
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-style: italic;
+      font-size: 1.1em;
+    }
+
+    nav {
+      background: rgba(255,226,209,0.95);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 8px 0;
+      border-bottom: 2px solid #ffb997;
+      backdrop-filter: blur(6px);
+    }
+
+    nav a {
+      color: #4b2e2b;
+      text-decoration: none;
+      padding: 10px 18px;
+      margin: 5px;
+      border-radius: 20px;
+      transition: 0.3s;
+      font-weight: 500;
+    }
+
+    nav a:hover,
+    nav a.active {
+      background: #f7a072;
+      color: white;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    main {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    section {
+      display: none;
+      max-width: 900px;
+      margin: 0 auto;
+      background: rgba(255,255,255,0.9);
+      padding: 35px 25px;
+      border-radius: 25px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    section.active {
+      display: block;
+      opacity: 1;
+    }
+
+    h2 {
+      color: #e46b3e;
+      margin-bottom: 15px;
+    }
+
+    p {
+      line-height: 1.7;
+      text-align: justify;
+      margin-bottom: 15px;
+    }
+
+    .img-box {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .img-box img {
+      max-width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .img-box img:hover {
+      transform: scale(1.03);
+    }
+
+    footer {
+      background: linear-gradient(135deg, #f7a072, #f48b6b);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      font-size: 14px;
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Proyecto STEM</h1>
+    <p>Paleoclimatología: Conociendo los climas del pasado 🌎</p>
+  </header>
+
+  <nav>
+    <a href="#" class="active" onclick="mostrarSeccion('inicio', event)">Inicio</a>
+    <a href="#" onclick="mostrarSeccion('informatica', event)">Informática</a>
+    <a href="#" onclick="mostrarSeccion('matematicas', event)">Matemáticas</a>
+    <a href="#" onclick="mostrarSeccion('educacion-ambiental', event)">Educación Ambiental</a>
+    <a href="#" onclick="mostrarSeccion('fisica', event)">Educación Física</a>
+    <a href="#" onclick="mostrarSeccion('ingles', event)">Inglés</a>
+    <a href="#" onclick="mostrarSeccion('biologia', event)">Biología</a>
+    <a href="#" onclick="mostrarSeccion('sociales', event)">Sociales</a>
+    <a href="#" onclick="mostrarSeccion('espanol', event)">Español</a>
+  </nav>
+
+  <main>
+    <!-- 🌸 INICIO -->
+    <section id="inicio" class="active">
+      <h2>Bienvenidos al Proyecto STEM</h2>
+      <div class="img-box">
+        <img src="https://tvazteca.brightspotcdn.com/dims4/default/e389d62/2147483647/strip/true/crop/1200x740+0+30/resize/1200x740!/format/jpg/quality/90/?url=http%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fde%2Fcc%2F325798374ec086ab7822e54f58c2%2Fderretimiento-hielo-polar-corteza-terrestre.jpg" alt="Capas de hielo paleoclimáticas">
+      </div>
+      <p>
+        La <b>paleoclimatología</b> es la ciencia que estudia los climas del pasado de la Tierra mediante el análisis de registros naturales como el hielo, los sedimentos marinos, los fósiles y los anillos de los árboles.
+      </p>
+      <p>
+        A través de esta disciplina, los científicos pueden reconstruir cómo ha variado el clima a lo largo de millones de años y comprender mejor los procesos que influyen en el cambio climático actual.
+      </p>
+      <p>
+        Nuestro proyecto STEM integra las áreas de ciencia, tecnología, ingeniería y matemáticas para analizar la historia climática del planeta y reflexionar sobre la importancia de cuidar nuestro entorno.
+      </p>
+    </section>
+
+   <!-- 💻 INFORMÁTICA -->
+<section id="informatica">
+  <h2>Informática 💻</h2>
+
+  <div class="img-box">
+    <img src="https://www.aboutespanol.com/thmb/VKaT5_boihxgQ2gfEoxp1dYZoIA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/surfing-the-internet-184146944-57f1a5d65f9b586c35868278.jpg" alt="Programación">
+  </div>
+
+  <p>
+    En informática exploramos herramientas digitales, programación y uso seguro de la tecnología para potenciar nuestras habilidades académicas y creativas.
+  </p>
+
+  <p>
+    Aprendemos a usar diversas plataformas, crear proyectos digitales e investigar usando tecnología moderna.
+  </p>
+
+  <!-- 📎 Enlace agregado -->
+  <p>
+    <a href="https://drive.google.com/file/d/1XdKXk4qUNIKeoJ_kYrMHV4b2ddYZu6I7/view?usp=sharing" target="_blank">
+      Ver archivo de Informática
+    </a>
+  </p>
+
+  <!-- 📄 Vista previa del archivo (PDF recomendado para que se vea) -->
+  <iframe 
+    src="https://drive.google.com/file/d/1XdKXk4qUNIKeoJ_kYrMHV4b2ddYZu6I7/preview" 
+    width="640" 
+    height="480" 
+    allow="autoplay">
+  </iframe>
+
+</section>
+
+
+ <!-- 🔢 MATEMÁTICAS -->
+<section id="matematicas">
+  <h2>Matemáticas 🔢</h2>
+
+  <div class="img-box">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Phanerozoic_Climate_Change.png/500px-Phanerozoic_Climate_Change.png" alt="Matemáticas">
+  </div>
+
+  <p>
+    En matemáticas trabajamos con razonamiento lógico, resolución de problemas y análisis numérico.
+  </p>
+
+  <p>
+    Aplicamos operaciones y conceptos matemáticos en situaciones de la vida real.
+  </p>
+
+  <!-- 📎 Enlace agregado -->
+  <p>
+    <a href="https://docs.google.com/document/d/1GWvu9I_ONjryAIlAKVPf3nZGkQ0n7OgC/edit?usp=sharing&ouid=110374929722314325706&rtpof=true&sd=true" target="_blank">
+      Ver documento de Matemáticas
+    </a>
+  </p>
+
+  <!-- 📄 Vista previa del documento -->
+  <iframe 
+    src="https://docs.google.com/document/d/1GWvu9I_ONjryAIlAKVPf3nZGkQ0n7OgC/preview" 
+    width="640" 
+    height="480">
+  </iframe>
+
+</section>
+
+
+
+   <!-- 🌱 EDUCACIÓN AMBIENTAL -->
+<section id="educacion-ambiental">
+  <h2>Educación Ambiental 🌱</h2>
+  <div class="img-box">
+      <img src="https://www.ucr.ac.cr/medios/fotos/2018/espeleotemas-cc5a5e8ba32e6a1.jpg" alt="Educación Ambiental">
+  </div>
+  <p>
+    En esta sección se promueve la conciencia sobre el cuidado del medio ambiente y la acción climática. 
+    Aprendemos a reducir, reutilizar y reciclar, reconociendo el valor de los ecosistemas y del agua como fuente de vida.
+  </p>
+  <p>
+    También analizamos los Objetivos de Desarrollo Sostenible (ODS) que buscan equilibrar el bienestar humano con la salud del planeta. 
+    Cada pequeña acción cuenta para construir un futuro más verde y responsable. 🍃
+  </p>
+
+  <!-- 🎬 Botón de enlace a YouTube -->
+  <div style="text-align: center; margin-top: 30px;">
+    <a href="https://youtu.be/YSy3rVSHq6Y" target="_blank" 
+       style="background-color:#e46b3e; color:white; padding:12px 25px; border-radius:25px; text-decoration:none; font-weight:bold; box-shadow:0 4px 8px rgba(0,0,0,0.2);">
+       ▶️ Ver video en YouTube
+    </a>
+  </div>
+</section>
+
+<!-- 🏃‍♀️ EDUCACIÓN FÍSICA -->
+<section id="fisica">
+  <h2>Educación Física 🏃‍♀️</h2>
+  <div class="img-box">
+    <img src="https://bogota.gov.co/sites/default/files/styles/1050px/public/eventos/2019-02/caminatas-ecologicas-idrd.jpg" alt="Caminata ecológica">
+  </div>
+  <p>
+    A través de la educación física promovemos actividades al aire libre que fortalecen el cuerpo y la mente, y además nos conectan con la naturaleza.
+  </p>
+  <p>
+    Realizamos caminatas ecológicas donde observamos el entorno y reflexionamos sobre los cambios ambientales que afectan nuestros ecosistemas y nuestra salud.
+  </p>
+
+  <!-- 📎 Enlace agregado -->
+  <p>
+    <a href="https://docs.google.com/document/d/19tDFph9SMpbleRFQXkkmtm0pTl5a9t3j/edit?usp=sharing&ouid=110374929722314325706&rtpof=true&sd=true" target="_blank">
+      Ver documento de Educación Física
+    </a>
+  </p>
+
+  <!-- 📄 Vista previa del documento / PDF -->
+  <iframe 
+    src="https://docs.google.com/document/d/19tDFph9SMpbleRFQXkkmtm0pTl5a9t3j/preview"
+    width="640"
+    height="480">
+  </iframe>
+
+</section>
+
+
+
+    <!-- 🇬🇧 INGLÉS -->
+<section id="ingles">
+  <h2>Inglés</h2>
+  <div class="img-box">
+  </div>
+  <p>
+    En inglés, trabajamos la comprensión lectora y vocabulario científico sobre el cambio climático. 
+    A través de textos y presentaciones, los estudiantes practican la lengua extranjera mientras aprenden sobre 
+    la protección del planeta y la importancia de la sostenibilidad global.
+  </p>
+
+  <!-- 🔗 Presentación de Google Slides -->
+  <iframe 
+    src="https://docs.google.com/presentation/d/1iIV6tFK0hZGWwky-PmjHGkrtxJPg7TvX/preview" 
+    width="100%" height="480" allowfullscreen
+    style="border-radius: 20px; border: none; box-shadow: 0 4px 10px rgba(0,0,0,0.2); margin-top: 20px;">
+  </iframe>
+
+  <!-- Enlace alternativo por si no carga la presentación -->
+  <p style="margin-top: 10px; text-align: center;">
+    📘 Si la presentación no se muestra, 
+    <a href="https://docs.google.com/presentation/d/1iIV6tFK0hZGWwky-PmjHGkrtxJPg7TvX/edit?usp=sharing" 
+       target="_blank" style="color:#e46b3e; font-weight:bold;">
+       ábrela aquí directamente.
+    </a>
+  </p>
+
+  <!-- 📄 PDF integrado -->
+  <iframe 
+    src="https://drive.google.com/file/d/1M2BpSU1lx609SzieJ4mjRLGRCPdvoZHe/preview"
+    width="100%" height="600"
+    style="border-radius:20px; border:none; box-shadow:0 4px 10px rgba(0,0,0,0.2); margin-top:20px;">
+  </iframe>
+
+  <!-- Enlace alternativo del PDF -->
+  <p style="margin-top: 10px; text-align: center;">
+    📄 Si el PDF no se muestra,
+    <a href="https://drive.google.com/file/d/1M2BpSU1lx609SzieJ4mjRLGRCPdvoZHe/view?usp=sharing"
+       target="_blank" style="color:#e46b3e; font-weight:bold;">
+      ábrelo aquí directamente.
+    </a>
+  </p>
+</section>
+
+
+    <!-- 🧬 BIOLOGÍA -->
+<section id="biologia">
+  <h2>Biología 🧬</h2>
+
+  <div class="img-box">
+    <img src="https://geotecniaalperi.com/wp-content/uploads/2021/09/lagarto.jpg" alt="Biología">
+  </div>
+
+  <p>
+    En biología exploramos los seres vivos, su estructura, funciones y cómo interactúan con el entorno. 
+  </p>
+
+  <p>
+    También analizamos cómo los cambios ambientales y climáticos afectan los ecosistemas.
+  </p>
+
+  <!-- 📎 Enlace agregado -->
+  <p>
+    <a href="https://docs.google.com/document/d/1JNjNbrxeCtNKTKW5frmi3TBz5OmYNUJM/edit?usp=sharing&ouid=110374929722314325706&rtpof=true&sd=true" target="_blank">
+      Ver documento de Biología
+    </a>
+  </p>
+
+  <!-- 📄 Vista previa del documento -->
+  <iframe 
+    src="https://docs.google.com/document/d/1JNjNbrxeCtNKTKW5frmi3TBz5OmYNUJM/preview"
+    width="640"
+    height="480">
+  </iframe>
+
+</section>
+
+
+
+   <!-- 🌍 SOCIALES -->
+<section id="sociales">
+  <h2>Sociales 🌍</h2>
+  <div class="img-box">
+    <img src="https://tse1.mm.bing.net/th/id/OIP.pJ3gA-q-ywriA71PQps6mQHaFu?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Mapa climático del mundo">
+  </div>
+  <p>
+    En el área de sociales exploramos cómo los cambios climáticos del pasado han influido en el desarrollo de las civilizaciones. 
+    Los períodos fríos y cálidos modificaron las migraciones humanas, la agricultura y la ubicación de los asentamientos.
+  </p>
+  <p>
+    Comprender la historia del clima también nos permite reflexionar sobre las desigualdades y desafíos sociales que genera el cambio climático actual, como el acceso al agua y los desplazamientos humanos.
+  </p>
+
+  <!-- 🔗 Documento Google Docs -->
+  <iframe src="https://docs.google.com/document/d/1rbvDJRoL1UQ0Y7RgEohgzkEmTGm-sLUY/preview"
+          width="100%" height="600" allowfullscreen
+          style="border-radius: 20px; border: none; box-shadow: 0 4px 10px rgba(0,0,0,0.2); margin-top: 20px;">
+  </iframe>
+
+  <!-- Enlace alternativo por si el iframe no carga -->
+  <p style="margin-top: 10px; text-align: center;">
+    📄 Si el documento no se muestra, 
+    <a href="https://docs.google.com/document/d/1rbvDJRoL1UQ0Y7RgEohgzkEmTGm-sLUY/edit?usp=sharing"
+       target="_blank" style="color:#e46b3e; font-weight:bold;">
+      ábrelo aquí directamente.
+    </a>
+  </p>
+</section>
+
+   <!-- 📚 ESPAÑOL -->
+<section id="espanol">
+  <h2>Español 📚</h2>
+
+  <div class="img-box">
+    <img src="https://0901.static.prezi.com/preview/v2/mz5otbndvutczidf7hlqldig476jc3sachvcdoaizecfr3dnitcq_3_0.png" alt="Español">
+  </div>
+
+  <p>
+    En español trabajamos la comprensión lectora, la producción textual y el análisis de narraciones.
+  </p>
+
+  <p>
+    Estudiamos diferentes tipos de textos y cómo interpretar sus mensajes.
+  </p>
+
+  <!-- 📎 Enlace agregado -->
+  <p>
+    <a href="https://view.genially.com/69137e00e1876e255f3259f6/interactive-content-relato-nevado-del-ruiz" target="_blank">
+      Ver presentación interactiva de Español (Genially)
+    </a>
+  </p>
+
+  <!-- 🎥 Vista previa de Genially -->
+  <iframe 
+    src="https://view.genially.com/69137e00e1876e255f3259f6/interactive-content-relato-nevado-del-ruiz"
+    width="640" 
+    height="480" 
+    frameborder="0" 
+    allowfullscreen>
+  </iframe>
+
+</section>
+
+
+
+  </main>
+
+  <footer>
+    <p>🌸 Proyecto STEM 2025 – Paleoclimatología | Cuidemos nuestro planeta 🌎</p>
+  </footer>
+
+  <script>
+    function mostrarSeccion(id, event) {
+      document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+      document.getElementById(id).classList.add("active");
+      document.querySelectorAll("nav a").forEach(a => a.classList.remove("active"));
+      event.target.classList.add("active");
+    }
+  </script>
+</body>
+</html>
